@@ -457,28 +457,44 @@
                 `Please help me complete my subscription. Thank you!`
             );
             
-            // Create Messenger URL
-            const messengerUrl = `https://m.me/${FACEBOOK_PAGE_USERNAME}?ref=GladsPremiums&text=${message}`;
-            
-            // Try to open Messenger app first, fallback to web
-            const appUrl = `fb-messenger://user/${FACEBOOK_PAGE_USERNAME}?ref=GladsPremiums&text=${message}`;
+            // Create Messenger app URLs for different platforms
+            const messengerAppUrl = `fb-messenger://user/${FACEBOOK_PAGE_USERNAME}?ref=GladsPremiums&text=${message}`;
+            const messengerWebUrl = `https://m.me/${FACEBOOK_PAGE_USERNAME}?ref=GladsPremiums&text=${message}`;
             
             // Check if we're on mobile
             if (/Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-                // Try to open Messenger app
-                window.location.href = appUrl;
-                
-                // Fallback to web after a short delay if app doesn't open
-                setTimeout(() => {
-                    window.location.href = messengerUrl;
-                }, 1000);
+                // Try to open Messenger app directly
+                try {
+                    // For iOS
+                    if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+                        window.location.href = messengerAppUrl;
+                    } else {
+                        // For Android and other mobile devices
+                        window.location.href = messengerAppUrl;
+                    }
+                    
+                    // Fallback to web version after a delay if app doesn't open
+                    setTimeout(() => {
+                        window.location.href = messengerWebUrl;
+                    }, 2000);
+                } catch (error) {
+                    // If app URL fails, open web version
+                    window.location.href = messengerWebUrl;
+                }
             } else {
-                // Desktop - open in new tab
-                window.open(messengerUrl, '_blank');
+                // Desktop - try to open app first, then fallback to web
+                try {
+                    window.location.href = messengerAppUrl;
+                    setTimeout(() => {
+                        window.open(messengerWebUrl, '_blank');
+                    }, 1000);
+                } catch (error) {
+                    window.open(messengerWebUrl, '_blank');
+                }
             }
             
             // Show success notification
-            showNotification('Opening Messenger...', 'success');
+            showNotification('Opening Messenger App...', 'success');
             closeMessengerModal();
             
             // Log the interaction

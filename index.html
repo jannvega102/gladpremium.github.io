@@ -1,5 +1,541 @@
-<html>
-<body>
-gladys
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GladsPremiums - Premium Streaming Accounts</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6366f1',
+                        secondary: '#8b5cf6',
+                        accent: '#f59e0b'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-2xl font-bold text-primary">GladsPremiums</h1>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#products" class="text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium">Products</a>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button class="bg-primary text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-primary/90">Login</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Products Section -->
+    <section id="products" class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Premium Streaming Accounts</h2>
+                <p class="text-lg text-gray-600">Choose from our selection of premium streaming services</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="productsGrid">
+                <!-- YouTube Premium -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="bg-red-600 p-6 text-center">
+                        <i class="fab fa-youtube text-4xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">YouTube Premium</h3>
+                        <p class="text-gray-600 mb-4">Ad-free videos, background play, and YouTube Music Premium</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-2xl font-bold text-primary">$9.99</span>
+                            <span class="text-sm text-gray-500">/month</span>
+                        </div>
+                        <div class="space-y-2 mb-4">
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Ad-free experience
+                            </div>
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Background play
+                            </div>
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                YouTube Music Premium
+                            </div>
+                        </div>
+                        <button onclick="subscribeToService('YouTube Premium', 9.99)" class="w-full bg-primary text-white py-2 px-4 rounded-md hover:bg-primary/90 transition duration-300">
+                            Subscribe
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Netflix -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="bg-black p-6 text-center">
+                        <i class="fas fa-play text-4xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Netflix Premium</h3>
+                        <p class="text-gray-600 mb-4">Unlimited movies, TV shows, and exclusive content</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-2xl font-bold text-primary">$15.99</span>
+                            <span class="text-sm text-gray-500">/month</span>
+                        </div>
+                        <div class="space-y-2 mb-4">
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                4K Ultra HD
+                            </div>
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                4 screens at once
+                            </div>
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Download on 4 devices
+                            </div>
+                        </div>
+                        <button onclick="subscribeToService('Netflix Premium', 15.99)" class="w-full bg-primary text-white py-2 px-4 rounded-md hover:bg-primary/90 transition duration-300">
+                            Subscribe
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Disney+ -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="bg-blue-600 p-6 text-center">
+                        <i class="fas fa-magic text-4xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Disney+</h3>
+                        <p class="text-gray-600 mb-4">Disney, Pixar, Marvel, Star Wars, and National Geographic</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-2xl font-bold text-primary">$7.99</span>
+                            <span class="text-sm text-gray-500">/month</span>
+                        </div>
+                        <div class="space-y-2 mb-4">
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                4K Ultra HD
+                            </div>
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                4K HDR
+                            </div>
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Up to 4 screens
+                            </div>
+                        </div>
+                        <button onclick="subscribeToService('Disney+', 7.99)" class="w-full bg-primary text-white py-2 px-4 rounded-md hover:bg-primary/90 transition duration-300">
+                            Subscribe
+                        </button>
+                    </div>
+                </div>
+
+                <!-- HBO Max -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="bg-purple-600 p-6 text-center">
+                        <i class="fas fa-crown text-4xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">HBO Max</h3>
+                        <p class="text-gray-600 mb-4">HBO originals, Warner Bros movies, and exclusive content</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-2xl font-bold text-primary">$14.99</span>
+                            <span class="text-sm text-gray-500">/month</span>
+                        </div>
+                        <div class="space-y-2 mb-4">
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                4K Ultra HD
+                            </div>
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                HDR content
+                            </div>
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Up to 3 screens
+                            </div>
+                        </div>
+                        <button onclick="subscribeToService('HBO Max', 14.99)" class="w-full bg-primary text-white py-2 px-4 rounded-md hover:bg-primary/90 transition duration-300">
+                            Subscribe
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Spotify Premium -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="bg-green-600 p-6 text-center">
+                        <i class="fab fa-spotify text-4xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Spotify Premium</h3>
+                        <p class="text-gray-600 mb-4">Ad-free music, offline downloads, and high quality audio</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-2xl font-bold text-primary">$9.99</span>
+                            <span class="text-sm text-gray-500">/month</span>
+                        </div>
+                        <div class="space-y-2 mb-4">
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Ad-free listening
+                            </div>
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Offline downloads
+                            </div>
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                High quality audio
+                            </div>
+                        </div>
+                        <button onclick="subscribeToService('Spotify Premium', 9.99)" class="w-full bg-primary text-white py-2 px-4 rounded-md hover:bg-primary/90 transition duration-300">
+                            Subscribe
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Apple TV+ -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="bg-gray-800 p-6 text-center">
+                        <i class="fab fa-apple text-4xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Apple TV+</h3>
+                        <p class="text-gray-600 mb-4">Original Apple shows and movies in 4K HDR</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-2xl font-bold text-primary">$4.99</span>
+                            <span class="text-sm text-gray-500">/month</span>
+                        </div>
+                        <div class="space-y-2 mb-4">
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                4K HDR content
+                            </div>
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Dolby Atmos
+                            </div>
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Family sharing
+                            </div>
+                        </div>
+                        <button onclick="subscribeToService('Apple TV+', 4.99)" class="w-full bg-primary text-white py-2 px-4 rounded-md hover:bg-primary/90 transition duration-300">
+                            Subscribe
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Amazon Prime -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="bg-blue-500 p-6 text-center">
+                        <i class="fab fa-amazon text-4xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Amazon Prime</h3>
+                        <p class="text-gray-600 mb-4">Prime Video, Prime Music, and fast shipping</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-2xl font-bold text-primary">$12.99</span>
+                            <span class="text-sm text-gray-500">/month</span>
+                        </div>
+                        <div class="space-y-2 mb-4">
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Prime Video
+                            </div>
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Prime Music
+                            </div>
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Free shipping
+                            </div>
+                        </div>
+                        <button onclick="subscribeToService('Amazon Prime', 12.99)" class="w-full bg-primary text-white py-2 px-4 rounded-md hover:bg-primary/90 transition duration-300">
+                            Subscribe
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Hulu -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="bg-green-500 p-6 text-center">
+                        <i class="fas fa-tv text-4xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Hulu</h3>
+                        <p class="text-gray-600 mb-4">TV shows, movies, and Hulu originals</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-2xl font-bold text-primary">$6.99</span>
+                            <span class="text-sm text-gray-500">/month</span>
+                        </div>
+                        <div class="space-y-2 mb-4">
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Ad-supported plan
+                            </div>
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                HD streaming
+                            </div>
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                2 screens
+                            </div>
+                        </div>
+                        <button onclick="subscribeToService('Hulu', 6.99)" class="w-full bg-primary text-white py-2 px-4 rounded-md hover:bg-primary/90 transition duration-300">
+                            Subscribe
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Messenger Modal -->
+    <div id="messengerModal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50">
+        <div class="flex items-center justify-center min-h-screen p-4">
+            <div class="bg-white rounded-lg shadow-xl max-w-md w-full">
+                <div class="flex items-center justify-between p-6 border-b">
+                    <h3 class="text-xl font-semibold text-gray-900">Contact via Messenger</h3>
+                    <button onclick="closeMessengerModal()" class="text-gray-400 hover:text-gray-600">
+                        <i class="fas fa-times text-xl"></i>
+                    </button>
+                </div>
+                <div class="p-6">
+                    <div class="text-center mb-6">
+                        <div class="bg-blue-500 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                            <i class="fab fa-facebook-messenger text-2xl"></i>
+                        </div>
+                        <h4 id="serviceName" class="text-lg font-semibold text-gray-900 mb-2"></h4>
+                        <p id="servicePrice" class="text-2xl font-bold text-primary mb-4"></p>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Your Name</label>
+                            <input type="text" id="customerName" placeholder="Enter your full name" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Contact Number</label>
+                            <input type="tel" id="contactNumber" placeholder="09XX XXX XXXX" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6">
+                        <button onclick="openMessenger()" class="w-full bg-blue-500 text-white py-3 px-4 rounded-md hover:bg-blue-600 transition duration-300">
+                            <i class="fab fa-facebook-messenger mr-2"></i>
+                            Open Messenger
+                        </button>
+                    </div>
+                    
+                    <div class="mt-4 text-center">
+                        <p class="text-sm text-gray-600">We'll contact you via Messenger to complete your order</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold text-primary mb-4">GladsPremiums</h3>
+                    <p class="text-gray-400">Your trusted source for premium streaming accounts.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#products" class="hover:text-white">Products</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">Help Center</a></li>
+                        <li><a href="#" class="hover:text-white">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-white">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Connect</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-discord text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 GladsPremiums. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Messenger functionality
+        let currentService = null;
+        let currentPrice = 0;
+        
+        // Replace with your actual Facebook page username or ID
+        const FACEBOOK_PAGE_USERNAME = 'jeboy.Vega21'; // Your Facebook profile username
+
+        function subscribeToService(name, price) {
+            currentService = name;
+            currentPrice = price;
+            
+            // Update modal content
+            document.getElementById('serviceName').textContent = name;
+            document.getElementById('servicePrice').textContent = `$${price.toFixed(2)}`;
+            
+            // Show Messenger modal
+            document.getElementById('messengerModal').classList.remove('hidden');
+        }
+
+        function closeMessengerModal() {
+            document.getElementById('messengerModal').classList.add('hidden');
+            // Clear form
+            document.getElementById('customerName').value = '';
+            document.getElementById('contactNumber').value = '';
+        }
+
+        function openMessenger() {
+            const customerName = document.getElementById('customerName').value;
+            const contactNumber = document.getElementById('contactNumber').value;
+            
+            // Validate inputs
+            if (!customerName || !contactNumber) {
+                showNotification('Please fill in all fields', 'error');
+                return;
+            }
+            
+            if (!isValidPhoneNumber(contactNumber)) {
+                showNotification('Please enter a valid phone number', 'error');
+                return;
+            }
+            
+            // Create pre-filled message content
+            const message = encodeURIComponent(
+                `Hi! I'm interested in subscribing to ${currentService} for $${currentPrice.toFixed(2)}/month.\n\n` +
+                `My details:\n` +
+                `Name: ${customerName}\n` +
+                `Contact: ${contactNumber}\n\n` +
+                `Please help me complete my subscription. Thank you!`
+            );
+            
+            // Create Messenger URL
+            const messengerUrl = `https://m.me/${FACEBOOK_PAGE_USERNAME}?ref=GladsPremiums&text=${message}`;
+            
+            // Try to open Messenger app first, fallback to web
+            const appUrl = `fb-messenger://user/${FACEBOOK_PAGE_USERNAME}?ref=GladsPremiums&text=${message}`;
+            
+            // Check if we're on mobile
+            if (/Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                // Try to open Messenger app
+                window.location.href = appUrl;
+                
+                // Fallback to web after a short delay if app doesn't open
+                setTimeout(() => {
+                    window.location.href = messengerUrl;
+                }, 1000);
+            } else {
+                // Desktop - open in new tab
+                window.open(messengerUrl, '_blank');
+            }
+            
+            // Show success notification
+            showNotification('Opening Messenger...', 'success');
+            closeMessengerModal();
+            
+            // Log the interaction
+            console.log('Messenger Contact Details:', {
+                service: currentService,
+                price: currentPrice,
+                customerName: customerName,
+                contactNumber: contactNumber,
+                timestamp: new Date().toISOString()
+            });
+        }
+
+        function isValidPhoneNumber(number) {
+            // Philippine phone number validation (09XXXXXXXXX)
+            const phoneRegex = /^09\d{9}$/;
+            return phoneRegex.test(number.replace(/\s/g, ''));
+        }
+
+        function showNotification(message, type = 'success') {
+            const notification = document.createElement('div');
+            let bgColor = 'bg-green-500';
+            
+            if (type === 'error') {
+                bgColor = 'bg-red-500';
+            } else if (type === 'info') {
+                bgColor = 'bg-blue-500';
+            }
+            
+            notification.className = `fixed top-4 right-4 ${bgColor} text-white px-6 py-3 rounded-lg shadow-lg z-50`;
+            notification.textContent = message;
+            document.body.appendChild(notification);
+            
+            setTimeout(() => {
+                notification.remove();
+            }, 4000);
+        }
+
+        // Close Messenger modal when clicking outside
+        document.getElementById('messengerModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeMessengerModal();
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>

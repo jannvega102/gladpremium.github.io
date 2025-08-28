@@ -65,7 +65,7 @@
             </div>
             
             <!-- Quillbot (1d) -->
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+            <!-- <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
                 <div class="bg-emerald-600 p-6 text-center">
                     <i class="fas fa-robot text-4xl text-white"></i>
                 </div>
@@ -81,10 +81,10 @@
                         Available
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <!-- Grammarly (1d) -->
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+            <!-- <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
                 <div class="bg-emerald-500 p-6 text-center">
                     <i class="fas fa-spell-check text-4xl text-white"></i>
                 </div>
@@ -100,7 +100,7 @@
                         Available
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </nav>
 
@@ -170,193 +170,161 @@
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="productsGrid">
                 <!-- YouTube Premium -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
-                    <div class="bg-red-600 p-6 text-center">
+                <div class="product-card" style="--accent:#ff0000">
+                    <div class="card-header">
                         <i class="fab fa-youtube text-4xl text-white"></i>
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-gray-900 mb-2">YouTube Premium</h3>
                         <p class="text-gray-600 mb-4">Ad-free videos, background play, and YouTube Music Premium</p>
                         <div class="flex items-center justify-between mb-4">
-                            <span class="text-2xl font-bold text-primary">₱25</span>
+                            <span class="text-2xl price">₱25</span>
                             <span class="text-sm text-gray-500">via invite (2-3d)</span>
                         </div>
-                        <div class="space-y-2 mb-4">
-                            <div class="flex items-center text-sm text-gray-600">
-                                <i class="fas fa-check text-green-500 mr-2"></i>
-                                Ad-free experience
-                            </div>
-                            <div class="flex items-center text-sm text-gray-600">
-                                <i class="fas fa-check text-green-500 mr-2"></i>
-                                Background play
-                            </div>
-                            <div class="flex items-center text-sm text-gray-600">
-                                <i class="fas fa-check text-green-500 mr-2"></i>
-                                YouTube Music Premium
-                            </div>
-                        </div>
-                        <div class="w-full bg-gradient-to-r from-red-500 to-red-600 text-white py-2 px-4 rounded-md text-center font-semibold animate-pulse">
+                        <div class="w-full available-badge text-white py-2 px-4 rounded-md text-center font-semibold">
                             Available
                         </div>
                     </div>
                 </div>
 
                 <!-- Netflix -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
-                    <div class="bg-black p-6 text-center">
+                <div class="product-card" style="--accent:#111827">
+                    <div class="card-header">
                         <i class="fas fa-play text-4xl text-white"></i>
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-gray-900 mb-2">NETFLIX shared profile (1d)</h3>
                         <p class="text-gray-600 mb-4">Shared profile access valid for 1 device</p>
                         <div class="flex items-center justify-between mb-4">
-                            <span class="text-2xl font-bold text-primary">₱95</span>
+                            <span class="text-2xl price">₱95</span>
                             <span class="text-sm text-gray-500">1 day</span>
                         </div>
-                        <div class="space-y-2 mb-4">
-                            <div class="flex items-center text-sm text-gray-600">
-                                <i class="fas fa-check text-green-500 mr-2"></i>
-                                4K Ultra HD
-                            </div>
-                            <div class="flex items-center text-sm text-gray-600">
-                                <i class="fas fa-check text-green-500 mr-2"></i>
-                                4 screens at once
-                            </div>
-                            <div class="flex items-center text-sm text-gray-600">
-                                <i class="fas fa-check text-green-500 mr-2"></i>
-                                Download on 4 devices
-                            </div>
-                        </div>
-                        <div class="w-full bg-gradient-to-r from-black to-gray-800 text-white py-2 px-4 rounded-md text-center font-semibold animate-pulse">
+                        <div class="w-full available-badge text-white py-2 px-4 rounded-md text-center font-semibold">
                             Available
                         </div>
                     </div>
                 </div>
 
                 <!-- Disney+ shared / solo -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
-                    <div class="bg-blue-600 p-6 text-center">
+                <div class="product-card" style="--accent:#2563eb">
+                    <div class="card-header">
                         <i class="fas fa-magic text-4xl text-white"></i>
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-gray-900 mb-2">DISNEY+ PH shared/solo</h3>
                         <p class="text-gray-600 mb-4">Shared (1d) or Solo (2d) profile</p>
                         <div class="flex items-center justify-between mb-4">
-                            <span class="text-2xl font-bold text-primary">₱95 / ₱165</span>
+                            <span class="text-2xl price">₱95 / ₱165</span>
                             <span class="text-sm text-gray-500">shared (1d) / solo (2d)</span>
                         </div>
-                        <div class="space-y-2 mb-4">
-                            <div class="flex items-center text-sm text-gray-600">
-                                <i class="fas fa-check text-green-500 mr-2"></i>
-                                4K Ultra HD
-                            </div>
-                            <div class="flex items-center text-sm text-gray-600">
-                                <i class="fas fa-check text-green-500 mr-2"></i>
-                                4K HDR
-                            </div>
-                            <div class="flex items-center text-sm text-gray-600">
-                                <i class="fas fa-check text-green-500 mr-2"></i>
-                                Up to 4 screens
-                            </div>
-                        </div>
-                        <div class="w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white py-2 px-4 rounded-md text-center font-semibold animate-pulse">
+                        <div class="w-full available-badge text-white py-2 px-4 rounded-md text-center font-semibold">
                             Available
                         </div>
                     </div>
                 </div>
 
-                <!-- Loklok (1d) -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
-                    <div class="bg-purple-600 p-6 text-center">
+                <div class="product-card" style="--accent:#7e22ce">
+                    <div class="card-header">
                         <i class="fas fa-film text-4xl text-white"></i>
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-gray-900 mb-2">LOKLOK (1d)</h3>
                         <p class="text-gray-600 mb-4">All-in-one streaming app access</p>
                         <div class="flex items-center justify-between mb-4">
-                            <span class="text-2xl font-bold text-primary">₱45</span>
+                            <span class="text-2xl price">₱45</span>
                             <span class="text-sm text-gray-500">1 day</span>
                         </div>
-                        <div class="space-y-2 mb-4"></div>
-                        <div class="w-full bg-gradient-to-r from-purple-500 to-purple-600 text-white py-2 px-4 rounded-md text-center font-semibold animate-pulse">
-                            Available
-                        </div>
+                        <div class="w-full available-badge text-white py-2 px-4 rounded-md text-center font-semibold">Available</div>
                     </div>
                 </div>
 
-                <!-- Capcut (2-3d) -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
-                    <div class="bg-green-600 p-6 text-center">
+                <div class="product-card" style="--accent:#16a34a">
+                    <div class="card-header">
                         <i class="fas fa-scissors text-4xl text-white"></i>
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-gray-900 mb-2">CAPCUT (2-3d)</h3>
                         <p class="text-gray-600 mb-4">Editing tools and premium resources</p>
                         <div class="flex items-center justify-between mb-4">
-                            <span class="text-2xl font-bold text-primary">₱95</span>
+                            <span class="text-2xl price">₱95</span>
                             <span class="text-sm text-gray-500">2–3 days</span>
                         </div>
-                        <div class="space-y-2 mb-4"></div>
-                        <div class="w-full bg-gradient-to-r from-green-500 to-green-600 text-white py-2 px-4 rounded-md text-center font-semibold animate-pulse">
-                            Available
-                        </div>
+                        <div class="w-full available-badge text-white py-2 px-4 rounded-md text-center font-semibold">Available</div>
                     </div>
                 </div>
 
-                <!-- Scribd (1d) -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
-                    <div class="bg-gray-800 p-6 text-center">
+                <div class="product-card" style="--accent:#334155">
+                    <div class="card-header">
                         <i class="fas fa-book text-4xl text-white"></i>
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-gray-900 mb-2">SCRIBD (1d)</h3>
                         <p class="text-gray-600 mb-4">Premium reading access</p>
                         <div class="flex items-center justify-between mb-4">
-                            <span class="text-2xl font-bold text-primary">₱45</span>
+                            <span class="text-2xl price">₱45</span>
                             <span class="text-sm text-gray-500">1 day</span>
                         </div>
-                        <div class="space-y-2 mb-4"></div>
-                        <div class="w-full bg-gradient-to-r from-gray-700 to-gray-800 text-white py-2 px-4 rounded-md text-center font-semibold animate-pulse">
-                            Available
-                        </div>
+                        <div class="w-full available-badge text-white py-2 px-4 rounded-md text-center font-semibold">Available</div>
                     </div>
                 </div>
 
-                <!-- ChatGPT (1d) -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
-                    <div class="bg-blue-500 p-6 text-center">
+                <div class="product-card" style="--accent:#2563eb">
+                    <div class="card-header">
                         <i class="fas fa-comments text-4xl text-white"></i>
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-gray-900 mb-2">CHATGPT (1d)</h3>
                         <p class="text-gray-600 mb-4">AI assistance for work and study</p>
                         <div class="flex items-center justify-between mb-4">
-                            <span class="text-2xl font-bold text-primary">₱95</span>
+                            <span class="text-2xl price">₱95</span>
                             <span class="text-sm text-gray-500">1 day</span>
                         </div>
-                        <div class="space-y-2 mb-4"></div>
-                        <div class="w-full bg-gradient-to-r from-blue-400 to-blue-500 text-white py-2 px-4 rounded-md text-center font-semibold animate-pulse">
-                            Available
-                        </div>
+                        <div class="w-full available-badge text-white py-2 px-4 rounded-md text-center font-semibold">Available</div>
                     </div>
                 </div>
 
-                <!-- Canva via invite (2-3d) -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
-                    <div class="bg-green-500 p-6 text-center">
+                <div class="product-card" style="--accent:#22c55e">
+                    <div class="card-header">
                         <i class="fas fa-pen-nib text-4xl text-white"></i>
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-gray-900 mb-2">CANVA via invite (2-3d)</h3>
                         <p class="text-gray-600 mb-4">Design with premium assets</p>
                         <div class="flex items-center justify-between mb-4">
-                            <span class="text-2xl font-bold text-primary">₱25</span>
+                            <span class="text-2xl price">₱25</span>
                             <span class="text-sm text-gray-500">2–3 days</span>
                         </div>
-                        <div class="space-y-2 mb-4"></div>
-                        <div class="w-full bg-gradient-to-r from-green-400 to-green-500 text-white py-2 px-4 rounded-md text-center font-semibold animate-pulse">
-                            Available
+                        <div class="w-full available-badge text-white py-2 px-4 rounded-md text-center font-semibold">Available</div>
+                    </div>
+                </div>
+
+                <div class="product-card" style="--accent:#10b981">
+                    <div class="card-header">
+                        <i class="fas fa-robot text-4xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">QUILLBOT (1d)</h3>
+                        <p class="text-gray-600 mb-4">Paraphrasing and grammar tools</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-2xl price">₱45</span>
+                            <span class="text-sm text-gray-500">1 day</span>
                         </div>
+                        <div class="w-full available-badge text-white py-2 px-4 rounded-md text-center font-semibold">Available</div>
+                    </div>
+                </div>
+
+                <div class="product-card" style="--accent:#059669">
+                    <div class="card-header">
+                        <i class="fas fa-spell-check text-4xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">GRAMMARLY (1d)</h3>
+                        <p class="text-gray-600 mb-4">Advanced grammar and style checks</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-2xl price">₱45</span>
+                            <span class="text-sm text-gray-500">1 day</span>
+                        </div>
+                        <div class="w-full available-badge text-white py-2 px-4 rounded-md text-center font-semibold">Available</div>
                     </div>
                 </div>
             </div>
@@ -366,6 +334,22 @@
 
 
 
+
+    <!-- Payment QR Section -->
+    <section id="pay" class="py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden">
+                <div class="bg-gradient-to-r from-primary to-secondary text-white text-center py-6">
+                    <h3 class="text-3xl" style="font-family:'Great Vibes',cursive;">Scan to Pay</h3>
+                    <p class="uppercase tracking-widest text-xs mt-1">GCASH QR</p>
+                </div>
+                <div class="p-6 flex flex-col items-center">
+                    <img src="images/gladsqr.jpg" alt="GladsPremiums GCash QR" class="w-full max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl rounded-xl shadow-md ring-1 ring-gray-200" loading="lazy">
+                    <p class="text-gray-600 text-sm mt-4 text-center">After payment, send your receipt via Messenger for faster processing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-12">
@@ -596,6 +580,110 @@
             
             .bg-white.rounded-lg:hover {
                 box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            }
+
+            /* Futuristic cards (scoped to products grid) */
+            #productsGrid > div {
+                position: relative;
+                border-radius: 16px;
+                overflow: hidden;
+                background: rgba(17, 24, 39, 0.55); /* slate-900 w/ alpha */
+                backdrop-filter: saturate(140%) blur(10px);
+                -webkit-backdrop-filter: saturate(140%) blur(10px);
+                border: 1px solid rgba(255,255,255,0.06);
+                box-shadow: 0 10px 30px rgba(99,102,241,0.25), inset 0 0 0 1px rgba(255,255,255,0.03);
+                transition: transform .35s ease, box-shadow .35s ease;
+                --accent: #8b5cf6;
+            }
+            #productsGrid > div:hover {
+                transform: translateY(-10px) scale(1.02);
+                box-shadow: 0 20px 50px rgba(139,92,246,0.35), 0 0 30px var(--accent, rgba(99,102,241,0.35));
+            }
+            /* Animated gradient border */
+            #productsGrid > div::before {
+                content: "";
+                position: absolute; inset: -2px;
+                background: conic-gradient(
+                    from 0deg,
+                    rgba(99,102,241,.7),
+                    rgba(139,92,246,.7),
+                    rgba(245,158,11,.7),
+                    var(--accent, rgba(99,102,241,.7))
+                );
+                filter: blur(14px);
+                opacity: .35;
+                z-index: 0;
+                animation: rotateBorder 8s linear infinite;
+            }
+            #productsGrid > div > * { position: relative; z-index: 1; }
+
+            /* Header panels get glass overlay */
+            #productsGrid > div > div:first-child {
+                position: relative;
+            }
+            #productsGrid > div > div:first-child::after {
+                content: ""; position: absolute; inset: 0;
+                background: linear-gradient(to bottom right, rgba(255,255,255,0.15), rgba(255,255,255,0.02));
+                mix-blend-mode: overlay;
+            }
+
+            /* Price & meta styling */
+            #productsGrid .text-primary { color: var(--accent, #A78BFA); }
+            #productsGrid .font-bold.text-primary {
+                text-shadow: 0 0 12px rgba(167,139,250,.45);
+            }
+            #productsGrid .animate-pulse {
+                background-image: linear-gradient(90deg, rgba(255,255,255,.12), rgba(255,255,255,.18));
+                border: 1px solid rgba(255,255,255,.15);
+                box-shadow: inset 0 0 0 1px rgba(255,255,255,.06), 0 0 18px var(--accent, rgba(167,139,250,.35));
+            }
+
+            /* Icon shimmer */
+            .icon-shimmer { position: relative; display: inline-block; }
+            .icon-shimmer::after {
+                content: ""; position: absolute; inset: 0; border-radius: 4px;
+                background: linear-gradient(110deg, transparent 0%, rgba(255,255,255,.7) 20%, transparent 40%);
+                transform: translateX(-120%);
+                animation: shimmer 2.5s ease-in-out infinite;
+                mix-blend-mode: overlay; pointer-events: none;
+            }
+            @keyframes shimmer {
+                0% { transform: translateX(-120%); }
+                60% { transform: translateX(120%); }
+                100% { transform: translateX(120%); }
+            }
+
+            @keyframes rotateBorder {
+                0% { transform: rotate(0deg); }
+                100% { transform: rotate(360deg); }
+            }
+
+            /* Force product cards to have white bodies */
+            #productsGrid > .product-card { background: #ffffff !important; border-color: rgba(15,23,42,0.08); }
+            #productsGrid > .product-card > .p-6 { background: #ffffff; }
+
+            /* Brand-colored product cards */
+            .product-card {
+                position: relative;
+                border-radius: 16px;
+                background: #ffffff;
+                border: 1px solid rgba(15, 23, 42, 0.08);
+                box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+                transition: transform .25s ease, box-shadow .25s ease;
+                overflow: hidden;
+            }
+            .product-card:hover {
+                transform: translateY(-6px);
+                box-shadow: 0 16px 36px rgba(15, 23, 42, 0.14), 0 0 0 3px color-mix(in srgb, var(--accent, #6366f1) 25%, transparent);
+            }
+            .product-card .card-header {
+                padding: 24px; text-align: center; color: #fff;
+                background: linear-gradient(135deg, var(--accent, #6366f1) 0%, color-mix(in srgb, var(--accent, #6366f1) 80%, #1f2937) 100%);
+            }
+            .product-card .price { color: var(--accent, #6366f1); font-weight: 700; }
+            .product-card .available-badge {
+                background: linear-gradient(90deg, color-mix(in srgb, var(--accent, #6366f1) 85%, #ffffff) 0%, var(--accent, #6366f1) 100%);
+                color: #fff; border: 0; box-shadow: 0 6px 18px color-mix(in srgb, var(--accent, #6366f1) 45%, transparent);
             }
         `;
         document.head.appendChild(style);

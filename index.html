@@ -48,8 +48,8 @@
     <section id="products" class="py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Premium Streaming Accounts</h2>
-                <p class="text-lg text-gray-600">Choose from our selection of premium streaming services</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 animate-fade-in-up">Premium Streaming Accounts</h2>
+                <p class="text-lg text-gray-600 animate-fade-in-up" style="animation-delay: 0.2s;">Available Services - Contact us for details</p>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="productsGrid">
@@ -79,9 +79,9 @@
                                 YouTube Music Premium
                             </div>
                         </div>
-                        <button onclick="subscribeToService('YouTube Premium', 9.99)" class="w-full bg-primary text-white py-2 px-4 rounded-md hover:bg-primary/90 transition duration-300">
-                            Subscribe
-                        </button>
+                        <div class="w-full bg-gradient-to-r from-red-500 to-red-600 text-white py-2 px-4 rounded-md text-center font-semibold animate-pulse">
+                            Available
+                        </div>
                     </div>
                 </div>
 
@@ -111,9 +111,9 @@
                                 Download on 4 devices
                             </div>
                         </div>
-                        <button onclick="subscribeToService('Netflix Premium', 15.99)" class="w-full bg-primary text-white py-2 px-4 rounded-md hover:bg-primary/90 transition duration-300">
-                            Subscribe
-                        </button>
+                        <div class="w-full bg-gradient-to-r from-black to-gray-800 text-white py-2 px-4 rounded-md text-center font-semibold animate-pulse">
+                            Available
+                        </div>
                     </div>
                 </div>
 
@@ -143,9 +143,9 @@
                                 Up to 4 screens
                             </div>
                         </div>
-                        <button onclick="subscribeToService('Disney+', 7.99)" class="w-full bg-primary text-white py-2 px-4 rounded-md hover:bg-primary/90 transition duration-300">
-                            Subscribe
-                        </button>
+                        <div class="w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white py-2 px-4 rounded-md text-center font-semibold animate-pulse">
+                            Available
+                        </div>
                     </div>
                 </div>
 
@@ -175,9 +175,9 @@
                                 Up to 3 screens
                             </div>
                         </div>
-                        <button onclick="subscribeToService('HBO Max', 14.99)" class="w-full bg-primary text-white py-2 px-4 rounded-md hover:bg-primary/90 transition duration-300">
-                            Subscribe
-                        </button>
+                        <div class="w-full bg-gradient-to-r from-purple-500 to-purple-600 text-white py-2 px-4 rounded-md text-center font-semibold animate-pulse">
+                            Available
+                        </div>
                     </div>
                 </div>
 
@@ -207,9 +207,9 @@
                                 High quality audio
                             </div>
                         </div>
-                        <button onclick="subscribeToService('Spotify Premium', 9.99)" class="w-full bg-primary text-white py-2 px-4 rounded-md hover:bg-primary/90 transition duration-300">
-                            Subscribe
-                        </button>
+                        <div class="w-full bg-gradient-to-r from-green-500 to-green-600 text-white py-2 px-4 rounded-md text-center font-semibold animate-pulse">
+                            Available
+                        </div>
                     </div>
                 </div>
 
@@ -239,9 +239,9 @@
                                 Family sharing
                             </div>
                         </div>
-                        <button onclick="subscribeToService('Apple TV+', 4.99)" class="w-full bg-primary text-white py-2 px-4 rounded-md hover:bg-primary/90 transition duration-300">
-                            Subscribe
-                        </button>
+                        <div class="w-full bg-gradient-to-r from-gray-700 to-gray-800 text-white py-2 px-4 rounded-md text-center font-semibold animate-pulse">
+                            Available
+                        </div>
                     </div>
                 </div>
 
@@ -271,9 +271,9 @@
                                 Free shipping
                             </div>
                         </div>
-                        <button onclick="subscribeToService('Amazon Prime', 12.99)" class="w-full bg-primary text-white py-2 px-4 rounded-md hover:bg-primary/90 transition duration-300">
-                            Subscribe
-                        </button>
+                        <div class="w-full bg-gradient-to-r from-blue-400 to-blue-500 text-white py-2 px-4 rounded-md text-center font-semibold animate-pulse">
+                            Available
+                        </div>
                     </div>
                 </div>
 
@@ -303,9 +303,9 @@
                                 2 screens
                             </div>
                         </div>
-                        <button onclick="subscribeToService('Hulu', 6.99)" class="w-full bg-primary text-white py-2 px-4 rounded-md hover:bg-primary/90 transition duration-300">
-                            Subscribe
-                        </button>
+                        <div class="w-full bg-gradient-to-r from-green-400 to-green-500 text-white py-2 px-4 rounded-md text-center font-semibold animate-pulse">
+                            Available
+                        </div>
                     </div>
                 </div>
             </div>
@@ -314,50 +314,7 @@
 
 
 
-    <!-- Messenger Modal -->
-    <div id="messengerModal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50">
-        <div class="flex items-center justify-center min-h-screen p-4">
-            <div class="bg-white rounded-lg shadow-xl max-w-md w-full">
-                <div class="flex items-center justify-between p-6 border-b">
-                    <h3 class="text-xl font-semibold text-gray-900">Contact via Messenger</h3>
-                    <button onclick="closeMessengerModal()" class="text-gray-400 hover:text-gray-600">
-                        <i class="fas fa-times text-xl"></i>
-                    </button>
-                </div>
-                <div class="p-6">
-                    <div class="text-center mb-6">
-                        <div class="bg-blue-500 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                            <i class="fab fa-facebook-messenger text-2xl"></i>
-                        </div>
-                        <h4 id="serviceName" class="text-lg font-semibold text-gray-900 mb-2"></h4>
-                        <p id="servicePrice" class="text-2xl font-bold text-primary mb-4"></p>
-                    </div>
-                    
-                    <div class="space-y-4">
-                        <div>
-                            <label class="block text-sm font-medium text-gray-700 mb-2">Your Name</label>
-                            <input type="text" id="customerName" placeholder="Enter your full name" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
-                        </div>
-                        <div>
-                            <label class="block text-sm font-medium text-gray-700 mb-2">Contact Number</label>
-                            <input type="tel" id="contactNumber" placeholder="09XX XXX XXXX" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
-                        </div>
-                    </div>
-                    
-                    <div class="mt-6">
-                        <button onclick="openMessenger()" class="w-full bg-blue-500 text-white py-3 px-4 rounded-md hover:bg-blue-600 transition duration-300">
-                            <i class="fab fa-facebook-messenger mr-2"></i>
-                            Open Messenger
-                        </button>
-                    </div>
-                    
-                    <div class="mt-4 text-center">
-                        <p class="text-sm text-gray-600">We'll contact you via Messenger to complete your order</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-12">
@@ -407,151 +364,152 @@
     </footer>
 
     <script>
-        // Messenger functionality
-        let currentService = null;
-        let currentPrice = 0;
-        
-        // Replace with your actual Facebook page username or ID
-        const FACEBOOK_PAGE_USERNAME = 'jeboy.Vega21'; // Your Facebook profile username
+        // Animation and mobile-friendly functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animate cards on scroll
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
 
-        function subscribeToService(name, price) {
-            currentService = name;
-            currentPrice = price;
-            
-            // Update modal content
-            document.getElementById('serviceName').textContent = name;
-            document.getElementById('servicePrice').textContent = `$${price.toFixed(2)}`;
-            
-            // Show Messenger modal
-            document.getElementById('messengerModal').classList.remove('hidden');
-        }
-
-        function closeMessengerModal() {
-            document.getElementById('messengerModal').classList.add('hidden');
-            // Clear form
-            document.getElementById('customerName').value = '';
-            document.getElementById('contactNumber').value = '';
-        }
-
-        function openMessenger() {
-            const customerName = document.getElementById('customerName').value;
-            const contactNumber = document.getElementById('contactNumber').value;
-            
-            // Validate inputs
-            if (!customerName || !contactNumber) {
-                showNotification('Please fill in all fields', 'error');
-                return;
-            }
-            
-            if (!isValidPhoneNumber(contactNumber)) {
-                showNotification('Please enter a valid phone number', 'error');
-                return;
-            }
-            
-            // Create pre-filled message content
-            const message = encodeURIComponent(
-                `Hi! I'm interested in subscribing to ${currentService} for $${currentPrice.toFixed(2)}/month.\n\n` +
-                `My details:\n` +
-                `Name: ${customerName}\n` +
-                `Contact: ${contactNumber}\n\n` +
-                `Please help me complete my subscription. Thank you!`
-            );
-            
-            // Create Messenger app URLs for different platforms
-            const messengerAppUrl = `fb-messenger://user/${FACEBOOK_PAGE_USERNAME}?ref=GladsPremiums&text=${message}`;
-            const messengerWebUrl = `https://m.me/${FACEBOOK_PAGE_USERNAME}?ref=GladsPremiums&text=${message}`;
-            
-            // Check if we're on mobile
-            if (/Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-                // Try to open Messenger app directly
-                try {
-                    // For iOS
-                    if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-                        window.location.href = messengerAppUrl;
-                    } else {
-                        // For Android and other mobile devices
-                        window.location.href = messengerAppUrl;
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-fade-in-up');
                     }
-                    
-                    // Fallback to web version after a delay if app doesn't open
-                    setTimeout(() => {
-                        window.location.href = messengerWebUrl;
-                    }, 2000);
-                } catch (error) {
-                    // If app URL fails, open web version
-                    window.location.href = messengerWebUrl;
-                }
-            } else {
-                // Desktop - try to open app first, then fallback to web
-                try {
-                    window.location.href = messengerAppUrl;
-                    setTimeout(() => {
-                        window.open(messengerWebUrl, '_blank');
-                    }, 1000);
-                } catch (error) {
-                    window.open(messengerWebUrl, '_blank');
-                }
-            }
-            
-            // Show success notification
-            showNotification('Opening Messenger App...', 'success');
-            closeMessengerModal();
-            
-            // Log the interaction
-            console.log('Messenger Contact Details:', {
-                service: currentService,
-                price: currentPrice,
-                customerName: customerName,
-                contactNumber: contactNumber,
-                timestamp: new Date().toISOString()
+                });
+            }, observerOptions);
+
+            // Observe all product cards
+            document.querySelectorAll('.bg-white.rounded-lg').forEach(card => {
+                observer.observe(card);
             });
-        }
 
-        function isValidPhoneNumber(number) {
-            // Philippine phone number validation (09XXXXXXXXX)
-            const phoneRegex = /^09\d{9}$/;
-            return phoneRegex.test(number.replace(/\s/g, ''));
-        }
+            // Add hover animations to cards
+            document.querySelectorAll('.bg-white.rounded-lg').forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-8px) scale(1.02)';
+                    this.style.transition = 'all 0.3s ease';
+                });
 
-        function showNotification(message, type = 'success') {
-            const notification = document.createElement('div');
-            let bgColor = 'bg-green-500';
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+            });
+
+            // Add floating animation to icons
+            document.querySelectorAll('.fab, .fas').forEach(icon => {
+                icon.style.animation = 'float 3s ease-in-out infinite';
+            });
+
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Add mobile menu toggle functionality
+            const mobileMenuButton = document.createElement('button');
+            mobileMenuButton.className = 'md:hidden p-2 rounded-md text-gray-700 hover:text-primary hover:bg-gray-100';
+            mobileMenuButton.innerHTML = '<i class="fas fa-bars text-xl"></i>';
             
-            if (type === 'error') {
-                bgColor = 'bg-red-500';
-            } else if (type === 'info') {
-                bgColor = 'bg-blue-500';
-            }
+            const nav = document.querySelector('nav .flex.justify-between');
+            const navLinks = document.querySelector('.hidden.md\\:block');
             
-            notification.className = `fixed top-4 right-4 ${bgColor} text-white px-6 py-3 rounded-lg shadow-lg z-50`;
-            notification.textContent = message;
-            document.body.appendChild(notification);
-            
-            setTimeout(() => {
-                notification.remove();
-            }, 4000);
-        }
+            nav.insertBefore(mobileMenuButton, nav.querySelector('.flex.items-center.space-x-4'));
 
-        // Close Messenger modal when clicking outside
-        document.getElementById('messengerModal').addEventListener('click', function(e) {
-            if (e.target === this) {
-                closeMessengerModal();
-            }
-        });
-
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
+            mobileMenuButton.addEventListener('click', function() {
+                const mobileMenu = document.createElement('div');
+                mobileMenu.className = 'absolute top-16 left-0 right-0 bg-white shadow-lg border-t border-gray-200 md:hidden';
+                mobileMenu.innerHTML = `
+                    <div class="px-4 py-2 space-y-1">
+                        <a href="#products" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-100">Products</a>
+                    </div>
+                `;
+                
+                document.body.appendChild(mobileMenu);
+                
+                // Remove menu when clicking outside
+                document.addEventListener('click', function removeMenu(e) {
+                    if (!mobileMenu.contains(e.target) && !mobileMenuButton.contains(e.target)) {
+                        mobileMenu.remove();
+                        document.removeEventListener('click', removeMenu);
+                    }
+                });
             });
         });
+
+        // Add CSS animations
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes float {
+                0%, 100% { transform: translateY(0px); }
+                50% { transform: translateY(-10px); }
+            }
+            
+            @keyframes fade-in-up {
+                from {
+                    opacity: 0;
+                    transform: translateY(30px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+            
+            .animate-fade-in-up {
+                animation: fade-in-up 0.6s ease-out forwards;
+            }
+            
+            .animate-pulse {
+                animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+            }
+            
+            @keyframes pulse {
+                0%, 100% { opacity: 1; }
+                50% { opacity: 0.7; }
+            }
+            
+            /* Mobile optimizations */
+            @media (max-width: 768px) {
+                .grid {
+                    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                }
+                
+                .text-4xl {
+                    font-size: 2rem;
+                }
+                
+                .text-2xl {
+                    font-size: 1.5rem;
+                }
+            }
+            
+            /* Smooth transitions */
+            * {
+                transition: all 0.3s ease;
+            }
+            
+            /* Card hover effects */
+            .bg-white.rounded-lg {
+                transition: all 0.3s ease;
+                cursor: pointer;
+            }
+            
+            .bg-white.rounded-lg:hover {
+                box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            }
+        `;
+        document.head.appendChild(style);
     </script>
 </body>
 </html>

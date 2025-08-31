@@ -41,6 +41,12 @@
             }
         }
     </script>
+    <style>
+        img.w-\[100vmin\].mt-\[0px\] {
+    margin-top: -150px;
+    margin-bottom: -150px;
+}
+        </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="bg-gray-50">
@@ -103,37 +109,7 @@
 
 
     <!-- Poster Price List Section -->
-    <section id="price-list" class="py-14">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-10">
-               <h1 class="text-[60px] md:text-[72px] leading-none text-pink-500 mb-3 font-bold">GladPremiums</h1>
-                <h2 class="text-[52px] md:text-[72px] leading-none text-gray-900 mb-3" style="font-family:'Great Vibes',cursive;">price list</h2>
-                <div class="uppercase tracking-[0.5em] text-gray-600 text-xs md:text-sm">MOP : GCASH ONLY</div>
-                <div class="uppercase tracking-[0.5em] text-gray-600 text-xs md:text-sm">FULL WARRANTY</div>
-                
-            </div>
-
-            <div class="mx-auto max-w-3xl divide-y divide-gray-200 bg-white/70 backdrop-blur rounded-2xl shadow p-4 sm:p-6">
-                <ul class="space-y-3">
-                    <li class="flex items-center justify-between py-2"><div class="flex items-center gap-3"><i class="fab fa-netflix text-red-600"></i><span class="text-gray-900">NETFLIX shared profile (One device can login)</span></div><span class="font-semibold">₱95</span></li>
-                    <li class="flex items-center justify-between py-2"><div class="flex items-center gap-3"><i class="fab fa-netflix text-red-600"></i><span class="text-gray-900">NETFLIX solo profile (Two device can login)</span></div><span class="font-semibold">₱165</span></li>
-                    <li class="flex items-center justify-between py-2"><div class="flex items-center gap-3"><i class="fas fa-star text-blue-600"></i><span class="text-gray-900">DISNEY+ PH shared profile (One device can login)</span></div><span class="font-semibold">₱95</span></li>
-                    <li class="flex items-center justify-between py-2"><div class="flex items-center gap-3"><i class="fas fa-star text-blue-600"></i><span class="text-gray-900">DISNEY+ PH solo profile (Two device can login)</span></div><span class="font-semibold">₱165</span></li>
-                    <li class="flex items-center justify-between py-2"><div class="flex items-center gap-3"><i class="fab fa-youtube text-red-600"></i><span class="text-gray-900">YOUTUBE via invite (Two-Three device can login)</span></div><span class="font-semibold">₱25</span></li>
-                    <li class="flex items-center justify-between py-2"><div class="flex items-center gap-3"><i class="fab fa-amazon text-blue-500"></i><span class="text-gray-900">PRIME VIDEO (One device can login)</span></div><span class="font-semibold">₱55</span></li>
-                    <li class="flex items-center justify-between py-2"><div class="flex items-center gap-3"><i class="fas fa-film text-purple-600"></i><span class="text-gray-900">LOKLOK (One device can login)</span></div><span class="font-semibold">₱45</span></li>
-                    <li class="flex items-center justify-between py-2"><div class="flex items-center gap-3"><i class="fas fa-scissors text-gray-700"></i><span class="text-gray-900">CAPCUT (Two-Three device can login)</span></div><span class="font-semibold">₱95</span></li>
-                    <li class="flex items-center justify-between py-2"><div class="flex items-center gap-3"><i class="fas fa-book text-teal-500"></i><span class="text-gray-900">SCRIBD (One device can login)</span></div><span class="font-semibold">₱45</span></li>
-                    <li class="flex items-center justify-between py-2"><div class="flex items-center gap-3"><i class="fas fa-comments text-gray-900"></i><span class="text-gray-900">CHATGPT (One device can login)</span></div><span class="font-semibold">₱95</span></li>
-                    <li class="flex items-center justify-between py-2"><div class="flex items-center gap-3"><i class="fas fa-pen-nib text-cyan-500"></i><span class="text-gray-900">CANVA via invite (Two-Three device can login)</span></div><span class="font-semibold">₱25</span></li>
-                    <li class="flex items-center justify-between py-2"><div class="flex items-center gap-3"><i class="fas fa-robot text-green-600"></i><span class="text-gray-900">QUILLBOT (One device can login)</span></div><span class="font-semibold">₱45</span></li>
-                    <li class="flex items-center justify-between py-2"><div class="flex items-center gap-3"><i class="fas fa-spell-check text-emerald-500"></i><span class="text-gray-900">GRAMMARLY (One device can login)</span></div><span class="font-semibold">₱45</span></li>
-                </ul>
-            </div>
-
-            <div class="text-center mt-8 tracking-[0.5em] uppercase text-gray-700">DM FOR OTHER PREMIUM ACCOUNTS</div>
-        </div>
-    </section>
+    
 
     <!-- Rules & Reminders Section (kept but hidden for card price list layout) -->
     <section class="py-8 hidden">
@@ -151,6 +127,14 @@
     </section>
 
     <!-- Products Section (cards as price list) -->
+    <div class="flex justify-center items-center ">
+        <img src="images/gladyslogo.png" 
+             class="w-[100vmin] mt-[0px]" 
+             loading="lazy" 
+             onerror="this.onerror=null;this.src='images/gladyslogo.png'">
+      </div>
+      
+
     <section id="products" class="py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
@@ -160,6 +144,50 @@
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="productsGrid">
                 <!-- YouTube Premium -->
+ <!-- Netflix -->
+                <div class="product-card" style="--accent:red">
+                    <div class="card-header">
+                        <center>
+                       <img src="images/netflix.png" class="w-12 h-12">
+                       </center>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">NETFLIX shared profile (One device can login)</h3>
+                        <p class="text-gray-600 mb-4">Shared profile access valid for 1 device</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-2xl price">₱95</span>
+                            <span class="text-sm text-gray-500">One Month Subscription</span>
+                        </div>
+                        <div class="w-full available-badge text-white py-2 px-4 rounded-md text-center font-semibold">
+                            Available
+                        </div>
+                    </div>
+                </div>
+                   <!-- Disney+ shared / solo -->
+                   <div class="product-card" style="--accent:#2563eb">
+                    <div class="card-header">
+                        <center>
+                        <img src="https://www.pngall.com/wp-content/uploads/13/Disney-Plus-Logo-PNG.png
+                        " class="w-[100px] h-[50px]">
+                        </center>
+                     
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">DISNEY+ PH shared/solo</h3>
+                        <p class="text-gray-600 mb-4">Shared (One device can login) or Solo (Two device can login) profile</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-2xl price">₱95 / ₱165</span>
+                            <span class="text-sm text-gray-500">One Month Subscription</span>
+                        </div>
+                        <div class="w-full available-badge text-white py-2 px-4 rounded-md text-center font-semibold">
+                            Available
+                        </div>
+                    </div>
+                </div>
+
+                
+              
+
                 <div class="product-card" style="--accent:#ff0000">
                     <div class="card-header">
                         <i class="fab fa-youtube text-4xl text-white"></i>
@@ -177,41 +205,9 @@
                     </div>
                 </div>
 
-                <!-- Netflix -->
-                <div class="product-card" style="--accent:#111827">
-                    <div class="card-header">
-                        <i class="fas fa-play text-4xl text-white"></i>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-2">NETFLIX shared profile (One device can login)</h3>
-                        <p class="text-gray-600 mb-4">Shared profile access valid for 1 device</p>
-                        <div class="flex items-center justify-between mb-4">
-                            <span class="text-2xl price">₱95</span>
-                            <span class="text-sm text-gray-500">One Month Subscription</span>
-                        </div>
-                        <div class="w-full available-badge text-white py-2 px-4 rounded-md text-center font-semibold">
-                            Available
-                        </div>
-                    </div>
-                </div>
+               
 
-                <!-- Disney+ shared / solo -->
-                <div class="product-card" style="--accent:#2563eb">
-                    <div class="card-header">
-                        <i class="fas fa-magic text-4xl text-white"></i>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-2">DISNEY+ PH shared/solo</h3>
-                        <p class="text-gray-600 mb-4">Shared (One device can login) or Solo (Two device can login) profile</p>
-                        <div class="flex items-center justify-between mb-4">
-                            <span class="text-2xl price">₱95 / ₱165</span>
-                            <span class="text-sm text-gray-500">One Month Subscription</span>
-                        </div>
-                        <div class="w-full available-badge text-white py-2 px-4 rounded-md text-center font-semibold">
-                            Available
-                        </div>
-                    </div>
-                </div>
+             
 
               
 
